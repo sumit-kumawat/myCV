@@ -1,0 +1,240 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{SUMIT KUMAWAT}
+\tagline{Network Engineer \& Web Developer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+\photoR{4.9cm}{Sumit_Photo}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{kumawatsumit45@gmail.com}
+\phone{750 751 2005}
+ 
+  \linkedin{sumit-kumawat}
+ \github{sumit-kumawat} % I'm just making this up though.
+
+\hspace
+\break
+FULL NAME : SUMIT ROSHANLAL KUMAWAT
+\break
+DOB : AUGUST, 09 2000
+\break
+BLOOD GROUP : AB+
+\break
+ADDRESS : ANAND VILLA, JAI BHAVANI NGR. THERGAON, PUNE 411033
+
+
+\divider
+\hspace
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{EXPERIENCE/INTERNSHIP}
+
+\cvevent{Assistant Network Engineer - (EWL)}{DY Patil International University}{March 2021 -- Ongoing}{DYP Education Complex - Akurdi, Pune.}
+\begin{itemize}
+\item Windows Server Admin
+\item DHCP and eSSL
+\item Firewall Security Configuration
+\end{itemize}
+
+\divider
+
+\cvevent{Technical Support - PART TIME}{JDR Contractors
+}{Augest 2019 – January 2020}{Rajiv Gandhi Infotech Park, Hinjawadi.}
+\begin{itemize}
+\item Wireless + CCTV Management
+\item Remote System + Network Support
+\end{itemize}
+
+\divider
+
+\cvevent{Assistant System Admin - INTERN}{DYPIMCA}{December 2018 – May 2019}{DYP Education Complex - Akurdi, Pune.}
+
+\begin{itemize}
+\item Troubleshooting
+\item Network Management
+\end{itemize}
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\cvsection{EDUCATION}
+
+\cvevent{BCA in Cloud Technology Information Security
+}{D Y Patil International University}{July 2018 – Current}{DYPIU PUNE}
+\item SEM V 7.7 GPA 
+
+\divider
+
+\cvevent{Higher Secondary}{BCACS}{February 2018}{SPPU PUNE}
+\item SEM HSC 54.32 % 
+
+\divider
+
+
+\cvevent{Senior Secondary}{KKHMS}{March 2016}{SPPU PUNE}
+\item SSC 67.40 %
+
+\cvsection{HOBBIES}
+
+\cvtag{Blogging}
+\cvtag{Graphic Design}
+\cvtag{Browsing} 
+\cvtag{Computer Games}
+
+%% New Page (Live Projects)
+\newpage
+
+\cvsection{Live PROJECT}
+
+\href{https://techeyboy.com/}{Techey Boy - My Own Blog on WordPress}
+
+\divider
+
+\href{http://www.timsindia.com/}{TIMS INDIA - Management College}
+
+\divider
+
+\href{https://tollfastag.in/}{Toll Fastag India - Fastag Service Agent}
+
+\divider
+
+\href{https://hotelsalasar.com/}{Shree Salasar Hotel - VEG Restaurant}
+
+\divider
+
+\href{https://rsaqua.in/}{RS Aqua - Water Purify Best Seller}
+
+\divider
+
+\href{https://jagdishwarmarble.com/}{Jagdishwar Marble - Store/Wholesaler}
+
+\divider
+
+\href{https://jdrcontractors.com/}{JDR Contractors - Builder/Engineer/Contractors}
+
+\divider
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Skills}
+\cvtag{Hardware}
+\cvtag{Networking}
+\cvtag{Windows Server}
+\cvtag{HTML} 
+\cvtag{CSS}
+\cvtag{PHP}
+\cvtag{SQL}
+\cvtag{WordPress}
+
+\cvsection{ACHIEVEMENTS}
+
+\cvachievement{\faTrophy}{e-Library}{Web Application}
+\cvevent{}{1st. Prize}{ FY BCA 2018}{}
+
+\divider
+
+\cvachievement{\faTrophy}{Firewall Security}{Graphical Design}
+\cvevent{}{2nd. Prize}{ FY BCA 2018}{}
+
+
+
+
+\cvsection{CERTIFICATIONS}
+
+\cvevent{IT Support}{Google.LLC}{September 2020}{}
+\divider
+\cvevent{GCP - Core Infrastructure}{Google.LLC}{September 2020}{}
+\divider
+\cvevent{BrupSuite Web Application Security Testing}{Google.LLC}{Augest 2020}{}
+\divider
+\cvevent{Digital Marketing}{Google.LLC}{December 2019}{}
+\divider
+
+\cvsection{Languages}
+
+\cvskill{HINDI}{5}
+\cvskill{ENGLISH}{4}
+
+
+%% New Page (College Projects)
+\newpage
+
+\cvsection{COLLEGE PROJECT}
+\href{http://unicom.timsindia.com/}{TY BCA | UniCOM - Universal Community (Under Development)}
+
+
+\divider
+
+
+\end{paracol}
+
+\end{document}
